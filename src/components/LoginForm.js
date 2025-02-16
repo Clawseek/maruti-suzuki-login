@@ -29,7 +29,10 @@ const LoginForm = () => {
     }
   };
 
-  const handleShowModal = () => setShowModal(true);
+  const handleShowModal = (event) => {
+    event.preventDefault();
+    setShowModal(true);
+  };
   const handleCloseModal = () => setShowModal(false);
 
   return (
