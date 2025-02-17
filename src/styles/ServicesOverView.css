@@ -1,0 +1,70 @@
+/* Ensure no gap at the top */
+.services-overview-page {
+    background-color: #cacaca; /* Light grey */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align everything to the top */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Logo container styling */
+  .services-overview-container {
+    background-color: #ffffff; /* Red background */
+    border-bottom: 4px solid #171C8F; /* Blue border */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0; /* No rounded corners at the top */
+    margin: 0;
+    padding: 10px 15px; /* Adjust padding for better spacing */
+  }
+  
+  /* Logo image */
+  .logo {
+    height: 50px;
+    width: auto;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+  
+  /* Card container */
+  .services-overview-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; /* Remove gap */
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .login-card {
+      padding: 1rem;
+    }
+  
+    .form-group label {
+      font-size: 0.9rem;
+    }
+  
+    .form-group input {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+    }
+    .langbutton {
+      
+      background: color #f4f4f4;;
+      color: #6b6b6b;
+  }
+  }
+  
