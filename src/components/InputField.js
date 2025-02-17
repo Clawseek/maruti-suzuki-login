@@ -17,4 +17,3 @@ const InputField = ({ label, type, value, onChange, placeholder }) => {
 };
 
 export default InputField;
-
