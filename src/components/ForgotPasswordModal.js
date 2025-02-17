@@ -8,7 +8,7 @@ const ForgotPasswordModal = ({ show, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose} centered>
       <Modal.Header closeButton>
-        <Modal.Title>Forget Your Password?</Modal.Title>
+        <Modal.Title>Forget Your Password ?</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="text-center">
