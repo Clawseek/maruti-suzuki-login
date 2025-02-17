@@ -20,7 +20,7 @@ const ForgotPasswordModal = ({ show, handleClose }) => {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="primary" onClick={handleClose}>
-          Back to Login
+          Close
         </Button>
       </Modal.Footer>
     </Modal>
