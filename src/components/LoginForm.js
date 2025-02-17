@@ -7,6 +7,8 @@ import ForgotPasswordLink from "./ForgotPasswordLink";
 import LoginButton from "./LoginButton";
 import PrivacyPolicyLink from "./PrivacyPolicyLink";
 import ForgotPasswordModal from "./ForgotPasswordModal";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../styles/LoginForm.css";
 
 const LoginForm = () => {
@@ -26,6 +28,17 @@ const LoginForm = () => {
       navigate("/home");
     } catch (error) {
       setError("Invalid credentials");
+      toast.error("Login Credential Incorrect. Please try again.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        style: { backgroundColor: '#F8D7DA', color: '#721C24', border: '1px solid #F5C6CB', borderRadius: '5px' },
+        icon: <i className="fas fa-exclamation-circle"></i>
+      });
     }
   };
 
@@ -71,6 +84,7 @@ const LoginForm = () => {
         <PrivacyPolicyLink />
       </div>
       <ForgotPasswordModal show={showModal} handleClose={handleCloseModal} />
+      <ToastContainer />
     </div>
   );
 };
