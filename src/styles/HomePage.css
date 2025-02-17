@@ -1,0 +1,147 @@
+/* Ensure no gap at the top */
+.home-page {
+    background-color: #cacaca; /* Light grey */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align everything to the top */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #ffffff; /* White background */
+    border-bottom: 4px solid #171C8F; /* Blue border */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px; /* Adjust padding for better spacing */
+  }
+  
+  header .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  header nav span {
+    margin-right: 10px;
+  }
+  
+  .language-selector {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-selector label {
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    text-align: center;
+    margin: 2rem 0;
+    color: #393939; /* Primary text color */
+  }
+  
+  .balance-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9f9f9; /* Input control background */
+    border: 1px solid #e5e5e5; /* Input control border */
+    border-radius: 5px;
+  }
+  
+  .balance-section h4 {
+    color: #23A6F0; /* Active tag */
+  }
+  
+  .service-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .service-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f9f9f9; /* Input control background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .service-card.active button {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .service-card.inactive button,
+  .service-card.inactive span {
+    color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .offers-promotions {
+    text-align: center;
+    margin-top: 3rem;
+    color: #393939; /* Primary text color */
+  }
+  
+  .refresh-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 576px) {
+    .home-page {
+      padding: 1rem;
+    }
+    
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem;
+    }
+  
+    header .logo {
+      margin-bottom: 1rem;
+    }
+  
+    .balance-section {
+      flex-direction: column;
+    }
+  
+    .service-card {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    .service-card h5 {
+      font-size: 1rem;
+    }
+  
+    .offers-promotions {
+      margin-top: 1rem;
+    }
+  }
+  
