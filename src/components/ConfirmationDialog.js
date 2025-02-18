@@ -1,5 +1,6 @@
 import React from 'react';
-
+import axios from 'axios';
+import  { useState,useEffect } from "react";
 const ConfirmationDialog = () => {
     const [invoiceDetails, setInvoiceDetails] = useState(null);
  
@@ -9,7 +10,7 @@ const ConfirmationDialog = () => {
         const data = await axios
           .get("https://api.lyrics.ovh/v1/artist/songName")
           .then(res => {
-            console.log(res);
+           
             setInvoiceDetails(res.data.lyrics);
           })
       } catch (e) {
@@ -30,7 +31,7 @@ const ConfirmationDialog = () => {
           <tbody>
             <tr>
               <td>Service Name</td>
-              <td>{invoiceDetails.serviceName}</td>
+              <td>"1122"</td>
             </tr>
             <tr>
               <td>Purchase Date</td>
