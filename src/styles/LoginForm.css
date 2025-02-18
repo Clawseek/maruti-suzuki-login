@@ -1,0 +1,133 @@
+/* Ensure no gap at the top */
+.login-page {
+  background-color: #cacaca; /* Light grey */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align everything to the top */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo container styling */
+.logo-container {
+  background-color: #ffffff; /* White background */
+  border-bottom: 4px solid #171C8F; /* Blue border */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0; /* No rounded corners at the top */
+  margin: 0;
+  padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+/* Logo image */
+.logo {
+  height: 50px;
+  width: auto;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+/* Card container */
+.login-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 50px; /* Remove gap */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .login-card {
+    padding: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
